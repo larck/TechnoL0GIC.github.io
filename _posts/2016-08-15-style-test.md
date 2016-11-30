@@ -1,97 +1,186 @@
 ---
 layout: post
-title: "A Full and Comprehensive Style Test"
-description: "Test post for style"
-date: 2016-08-15
-tags: [test, style]
+title: "테스트 TEST 게시물 ARTICLE 테스트 TEST 게시물 ARTICLE"
+description: "이것은 설명입니다. This is description"
+date: 2016-11-30
+tags: [test, web]
 comments: true
 share: true
 ---
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+지킬로 첫 포스팅 해보는데 하하하 재밌군
+**정말** 재밌어 ***리얼리*** *꿀잼* 하
 
-# Body text
+	굳굳
+	
+> 오오오
 
----
+```javascript 
+import React from 'react';
+import Markdown from './Markdown';
+import Profile from './Profile';
+import Curriculum from './Curriculum';
+import Tag from './Tag';
+import Participants from './Participants';
 
-# Heading 1
+class ApplyContainer extends React.Component {
 
-## Heading 2
+  constructor(props) {
+    super(props);
 
-### Heading 3
+    //초기에 받아와서 제일 위의 커리큘럼 데이터를 밑에다 써줘
 
-#### Heading 4
+    this.state = {
+      title: 'Title',
+      tag: 'web',
+      participants: 'Participants',
+      markdown: '# Markdown',
+      profileData: [
+        {name: "개발하는데", desc: "주웅이 얼굴을 자꾸 보게되"}
+      ],
+      curriculumData: [
+        {title: "최대한 많은양의 햄버거를 최단시간에 섭취할 수 있는 방법론", id:"1"},
+        {title: "김동우의 연애사 전격공개", id:"2"},
+        {title: "위 얼 오버워치", id:"3"}
+      ]
+    }
+  }
 
-##### Heading 5
+  setContent(title, tag, participants, markdown, profileData) {
+    this.setState({
+      title,
+      tag,
+      participants,
+      markdown,
+      profileData
+    }, ()=> {
+      $("#marked").html(marked(this.state.markdown));
+    });
+  }
 
-###### Heading 6
+  setCurri() {
+    //카테고리 필터링에 따라 받아오면 됨
 
-Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is emphasized.* Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget `COPY filename` sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, <del>Dinner’s at 5:00.</del> commodo vitae, feugiat in, nunc. Morbi imperdiet augue <mark>mark element</mark> quis tellus.
+    console.log($(".tag"));
 
-# Images
+    /* this.setState({
+      curriculumData
+    }); */
+  }
 
-![Large example image](http://placehold.it/800x400 "Large example image")
-![Medium example image](http://placehold.it/400x200 "Medium example image")
-![Small example image](http://placehold.it/200x200 "Small example image")
+  //카테고리 필터링은 누가하죠?..
 
-# Blockquotes
+  loadDetail(id) {
 
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+    //커리큘럼 클릭 이벤트임
+    //id에 해당하는 데이터 불러와
 
-# List Types
+    $.get( "index.html", function(data) {
+      console.log(data);
+    });
 
-### Ordered Lists
+    if (id == 1) {
+      this.setContent(
+        '최대한 많은양의 햄버거를 최단시간에 섭취할 수 있는 방법론',
+        'cs',
+        '홍길동, 고길동, 정동윤',
+        '# 엄마는 투사다',
+        [
+          {name: '이름', desc: '이 데스크가 책상 데스크는 아님'},
+          {name: 'ㄹㅇ', desc: '디스크립션 약자지'},
+          {name: '닥쳐', desc: 'ㄹㅇ 시끄러움'},
+        ]
+      );
+    } else if (id == 2) {
+      this.setContent(
+        '김동우의 연애사 전격공개',
+        'app',
+        '김동우, 김동우2, 김동우3',
+        '# 이거 렌더링 안댐asdfasdfafd ㅠ',
+        [
+          {name: '이름', desc: '이 데스ㅁㅁㄴㅇㅁㄴㅇㄹ크가 책상 데스크는 아님'},
+          {name: 'ㄹㅇ', desc: '디스크립션 약자지'},
+          {name: '닥쳐', desc: 'ㄹㅇ 시끄러움'},
+        ]
+      );
+    } else if (id == 3) {
+      this.setContent(
+        '위얼 오버워치',
+        'game',
+        '루시우, 메르시, 아나, 라인하르트, 겐지',
+        '# 시공의 폭풍',
+        [
+          {name: '루시우', desc: '춤 잘춤'},
+          {name: '메르시', desc: '잘 날라댕김'},
+          {name: '아나', desc: '아나;'},
+          {name: '라인하르트', desc: '쿠팡맨'},
+          {name: '겐지', desc: '?'}
+        ]
+      )
+    }
+  }
 
-1. Item one
-   1. sub item one
-   2. sub item two
-   3. sub item three
-2. Item two
+  render(){
+    return (
+      <div>
+        <aside>
+          <div className="category">
+            <h5>카테고리</h5>
+            <div className="tag" data-select="" data-tag="web" onClick={ ()=> this.setCurri() }><div className="square"></div>웹</div>
+            <div className="tag" data-select="" data-tag="app" onClick={ ()=> this.setCurri() }><div className="square"></div>앱</div>
+            <div className="tag" data-select="" data-tag="game" onClick={ ()=> this.setCurri() }><div className="square"></div>게임</div>
+            <div className="tag" data-select="" data-tag="iot" onClick={ ()=> this.setCurri() }><div className="square"></div>사물인터넷</div>
+            <div className="tag" data-select="" data-tag="program" onClick={ ()=> this.setCurri() }><div className="square"></div>프로그램</div>
+            <div className="tag" data-select="" data-tag="cs" onClick={ ()=> this.setCurri() }><div className="square"></div>컴퓨터과학</div>
+          </div>
+          <div className="list">
+            <h5>교육 커리큘럼</h5>
+            {
+              this.state.curriculumData.map((curriculum, i) => {
+                return(
+                  <Curriculum parent={ this } title={ curriculum.title } id={ curriculum.id } key={i}  />
+                )
+              })
+            }
+          </div>
+        </aside>
+        <div id="content">
+          <div className="line-category"></div>
+          <div className="box title">
+            <div className="col">
+              <h1> { this.state.title } </h1>
+              <div className="info">
+                <Tag category={ this.state.tag } />
+                <Participants people={ this.state.participants } />
+              </div>
+            </div>
+            <div className="col">
+              <button className="fb"><img src="img/fb.svg" alt="페이스북으로 공유" /></button>
+              <button className="tw"><img src="img/tw.svg" alt="트위터로 공유" /></button>
+              <button className="kt"><img src="img/kt.svg" alt="카카오톡으로 공유" /></button>
+            </div>
+          </div>
+          <div className="box content">
+            <div id="marked" > </div>
+            <textarea className="marked-temp" disabled>
 
-### Unordered Lists
-
-* Item one
-  * sub item one
-  * sub item two
-  * sub item three
-* Item two
-* Item three
-
-### Definition Lists
-
-kramdown
-: A Markdown-superset converter
-
-Maruku
-: Another Markdown-superset converter
-
-# Tables
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
-
-
-# Code Snippets
-
-Syntax highlighting via Rouge
-
-```css
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
+            </textarea>
+          </div>
+          <div className="box sullivan">
+            {
+              this.state.profileData.map((profile, i) => {
+                return(
+                  <Profile name={profile.name} desc={profile.desc} key={i} />
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default ApplyContainer;
+
 ```
-
-Non Pygments code example
-
-    <div id="awesome">
-        <p>This is great isn't it?</p>
-    </div>
