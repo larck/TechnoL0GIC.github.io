@@ -3,19 +3,19 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "L0GIC"
 
 
 
 author:
-  name:             your-name
+  name:             L0GIC
   facebook:         your-id
   twitter:          your-id
   github:           your-id
   linkedin:         your-id
   medium:           your-id
   tumblr:           your-id
-  email:            your-id@your-email.com
+  email:            cdhnet98@gmail.com
 
 # Google-analytics
 google-analytics:
@@ -23,7 +23,7 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "your-id"
+  id:               "cdhnet98"
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
@@ -53,7 +53,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            "https://github.com/technol0gic"
 
 
 
