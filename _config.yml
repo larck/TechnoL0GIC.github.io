@@ -23,11 +23,11 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "cdhnet98"
+  id:               "blog-pdgn0r28f5"
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://localhost:4000" # use this url when develop
+url:                "http://technol0gic.github.io" # use this url when develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
