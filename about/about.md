@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-> 2016년 11월 17일 기점으로 수능 끝난 고3이 되었습니다. 야호!
+	이전 Wordpress 블로그에서 Migration 중 입니다.
 
 안녕하세요. 쓸모있는 풀스택 웹 개발자가 되기위해 노력하는 [L0GIC](http://l0gic.me)입니다.
 
