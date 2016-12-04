@@ -154,6 +154,11 @@ body {
   -------------- */
 
 .list {
+  .list-post-title {
+    font-weight: 300;
+    transition: all 0.3s;
+  }
+
   &-post {
     padding: 4% 2%;
     &:hover {
@@ -190,7 +195,7 @@ body {
     &-desc {
 			color: lighten($base-color, 20);
       margin-bottom: .25rem;
-      font-size :1rem;
+      font-size :0.8rem;
     }
   }
 
