@@ -158,7 +158,7 @@ body {
     padding: 4% 2%;
     border-bottom: 1px solid #EEE;
 
-    &:last-of-type {
+    &:nth-last-of-type(2) {
       border-bottom: none;
     }
 
