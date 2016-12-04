@@ -14,7 +14,7 @@ share: true
 
 자바스크립트는 더이상 웹브라우저에서 DOM을 조작하기 위해 사용하는 단순한 언어가 아닙니다.  새로운 기술은 제가 글을 쓰고 있는 이 시점에서도 계속 등장하고 있습니다. 이제 자바스크립트는 웹브라우저에서만 구동되는 언어가 아닙니다.
 
-예를들어, 프론트엔드 웹 개발을 위한 [React](https://facebook.github.io/react), [AngularJS](https://angularjs.org/), [Vue](https://vuejs.org/) 등의 여러 라이브러리와 프레임워크, 웹 서버개발을 위한 [node.js](https://nodejs.org/ko/), 데스크탑 앱을 개발을 위한 [NW.JS](https://nwjs.io/)와 [Electron](http://electron.atom.io/), 모바일 앱 개발을 위한 [React Native](https://facebook.github.io/react-native/) 등이 존재합니다. 심지어 로보틱스와 IoT를 위한 [Johnny-Five](http://johnny-five.io/)라는 플랫폼도 존재합니다. 
+예를들어, 프론트엔드 웹 개발을 위한 [React](https://facebook.github.io/react), [AngularJS](https://angularjs.org/), [Vue](https://vuejs.org/) 등의 여러 라이브러리와 프레임워크, 웹 서버개발을 위한 [node.js](https://nodejs.org/ko/), 데스크탑 앱을 개발을 위한 [NW.JS](https://nwjs.io/)와 [Electron](http://electron.atom.io/), 모바일 앱 개발을 위한 [React Native](https://facebook.github.io/react-native/) 등이 존재합니다. 심지어 로보틱스와 IoT를 위한 [Johnny-Five](http://johnny-five.io/)라는 플랫폼도 존재합니다. 또한 [MongoDB](https://www.mongodb.com/)를 활용하여 Javascript로 DB관리도 가능하죠.
 
 이런 새로운 기술들을 제대로 다루기 위해서는 그 기반인 자바스크립트부터 제대로 알고 있어야 한다고 생각합니다. 그렇기에 본 강의의 궁극적인 목표는 **Javascript 생태계의 여러 기술을 제대로 다루기 위한 Javascript 기초 공부** 입니다.
 
@@ -48,6 +48,8 @@ share: true
 ![](/images/javascript-basic-class-1-1.png)
 
 브라우저로 파일을 실행하자 마자 우리는 이런 메세지를 볼 수 있습니다. 
+
+우리는 위의 코드로 '변수선언', '연산자 사용', '메세지 출력' 을 한번에 사용해보았습니다. 
 
 
 
