@@ -156,6 +156,7 @@ body {
 .list {
   &-post {
     padding: 4% 2%;
+    border-bottom: 1px solid #EEE;
     &:hover {
     background-color: $background-over-color;
     border-color: transparent;
@@ -193,6 +194,10 @@ body {
       margin-bottom: .25rem;
       font-size :0.8rem;
     }
+  }
+
+  &-post:last-child {
+    border-bottom: none;
   }
 
   &-pagination {
