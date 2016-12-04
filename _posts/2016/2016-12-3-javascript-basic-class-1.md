@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Javscript 기초] 1강 - 자바스크립트 소개"
-description: ""
+description: "자바스크립트 기초에 대해 배워봅니다."
 date: 2013-08-16
 tags: [Javascript]
 comments: true
