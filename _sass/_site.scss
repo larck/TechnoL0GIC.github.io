@@ -162,6 +162,10 @@ body {
     border-radius: 10px;
     }
 
+    &:hover .list-post-title {
+      color: #2AA9F7;
+    }
+
     a {
       color: $base-color;
 
@@ -175,9 +179,6 @@ body {
       margin-bottom: .25rem;
       font-size : 1.6rem;
       font-weight: 600;
-      &:hover {
-        color: #2AA9F7;
-      }
     }
 
     &-date {
