@@ -154,11 +154,6 @@ body {
   -------------- */
 
 .list {
-  .list-post-title {
-    font-weight: 300;
-    transition: all 0.3s;
-  }
-
   &-post {
     padding: 4% 2%;
     &:hover {
@@ -182,8 +177,9 @@ body {
 
     &-title {
       margin-bottom: .25rem;
-      font-size : 1.6rem;
-      font-weight: 600;
+      font-size : 1.3rem;
+      font-weight: 300;
+      transition: all 0.3s;
     }
 
     &-date {
