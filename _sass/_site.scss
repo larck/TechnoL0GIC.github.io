@@ -158,6 +158,10 @@ body {
     padding: 4% 2%;
     border-bottom: 1px solid #EEE;
 
+    &:last-of-type {
+      border-bottom: none;
+    }
+
     &:hover .list-post-title {
       color: #2AA9F7;
     }
@@ -189,10 +193,6 @@ body {
       margin-bottom: .25rem;
       font-size :0.8rem;
     }
-  }
-
-  &-post:last-of-type {
-    border-bottom: none;
   }
 
   &-pagination {
