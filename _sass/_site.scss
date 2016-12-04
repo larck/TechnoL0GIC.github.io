@@ -157,11 +157,6 @@ body {
   &-post {
     padding: 4% 2%;
     border-bottom: 1px solid #EEE;
-    &:hover {
-    background-color: $background-over-color;
-    border-color: transparent;
-    border-radius: 10px;
-    }
 
     &:hover .list-post-title {
       color: #2AA9F7;
@@ -196,7 +191,7 @@ body {
     }
   }
 
-  &-post:last-child {
+  &-post:last-of-type {
     border-bottom: none;
   }
 
