@@ -3,5 +3,4 @@ title: 포트폴리오
 permalink: /portfolio/
 ---
 
-## 자바스크립트 기초
-* [1강 - 자바스크립트 소개](http://l0gic.me/2013-08-16/javascript-basic-class-1/)
+    개인 프로젝트, 팀 프로젝트, 외주 등을 정리합니다.
