@@ -1,6 +1,6 @@
 ---
 title: 강의 목록
-permalink: /cources/
+permalink: /courses/
 ---
 
     블로그에 작성한 강의 목록입니다.
