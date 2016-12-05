@@ -1,6 +1,6 @@
 ---
 title: 포트폴리오
-permalink: /cources/
+permalink: /portfolio/
 ---
 
 ## 자바스크립트 기초
