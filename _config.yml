@@ -44,6 +44,8 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+  - archive:        "Archive"
+    url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
   - name:           "Cources"
