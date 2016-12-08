@@ -23,7 +23,7 @@ disqus:
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://technol0gic.github.io" # use this url when develop
+url:                "http://l0gic.me" # use this url when develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
@@ -44,7 +44,7 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
-  - archive:        "Archive"
+  - name:           "Archive"
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
