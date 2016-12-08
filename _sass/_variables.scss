@@ -3,11 +3,12 @@
 /*--------------
   Font
   -------------- */
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 
-$base-font: "Source Sans Pro", sans-serif;
+$base-font: "Noto Sans KR", sans-serif;
 $code-font: 'Nanum Gothic Coding', monospace;
 $code-gist-font: 'Nanum Gothic Coding', monospace !important;
 
