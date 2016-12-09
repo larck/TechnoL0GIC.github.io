@@ -8,9 +8,9 @@ comments: true
 share: true
 ---
 
-Apache 서버 위에서 돌아가는 PHP 등의 경우는 Apache가 내부에서 프록싱을 해주어서 한 서버에서 여러 사이트를 돌리는게 가능하다.
+Apache 혹은 Nginx 서버 위에서 돌아가는 PHP 등의 경우는 Apache가 내부에서 프록싱을 해주어서 한 서버에서 여러 사이트를 돌리는게 가능하다. 물론 node.js의 경우에도 노드 서버 앞에 Apache나 Nginx를 둬서 프록싱을 맡겨 버리는 방법도 있다. 하지만 node.js 에서 직접 이런 기능을 구현할 수 있는데, `vhost` 를 이용하는 방법이다.
 
-node.js 에서도 한 서버에 여러 도메인을 연결해 여러 사이트를 운영하는 방법이 존재한다. `vhost` 를 이용하는 방법인데, Express 3.x 버전까지는 vhost가 포함되어 있었는데, 4.x 버전부터 [독립된 모듈](https://github.com/expressjs/vhost)이 되었다. npm을 이용해서 다운로드 받을 수 있다.
+Express 3.x 버전까지는 vhost가 포함되어 있었는데, 4.x 버전부터 [독립된 모듈](https://github.com/expressjs/vhost)이 되었다. npm을 이용해서 다운로드 받을 수 있다.
 
 	$ npm install vhost
 
