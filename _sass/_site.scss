@@ -182,23 +182,26 @@ body {
     }
 
     &-title {
+      font-family: "Source Sans Pro";
       margin-bottom: .25rem;
       font-size : 1.5rem;
-      font-weight: 200;
+      font-weight: 300;
       transition: all 0.3s;
     }
 
     &-date {
+      font-family: "Source Sans Pro";
       color: $base-lighten-color;
-      font-size: .75rem;
+      font-size: .85rem;
       text-transform: uppercase;
     }
 
     &-desc {
+      font-family: "Source Sans Pro";
 			color: lighten($base-color, 20);
       margin-bottom: .25rem;
       font-size :0.9rem;
-      font-weight: 200;
+      font-weight: 300;
     }
   }
 
