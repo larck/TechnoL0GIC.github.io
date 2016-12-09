@@ -10,6 +10,9 @@ share: true
 
 ![](/images/javascript.png)
 
+> 본 강의는 Javascript 초심자 분들이 읽기에 적합합니다.
+> 또한 기초 프로그래밍 지식, HTML, 그리고 CSS에 대한 기초적인 지식이 요구될 수 있습니다.
+
 ## 서론
 
 저는 자바스크립트를 굉장히 많이 사용하고 좋아하는 편입니다. 거의 모든 프로젝트에서 자바스크립트로 코딩을 하고 있다고 해도 과언이 아닐 정도로요. 언어 자체가 맘에 든다는 이유도 있지만, 제가 자바스크립트를 좋아하는 이유는 **자바스크립트의 넓은 생태계**라고 말하고 싶군요.
@@ -21,8 +24,6 @@ share: true
 예를들어, 프론트엔드 웹 개발을 위한 [React](https://facebook.github.io/react), [AngularJS](https://angularjs.org/), [Vue](https://vuejs.org/) 등의 여러 라이브러리와 프레임워크, 웹 서버개발을 위한 [node.js](https://nodejs.org/ko/), 데스크탑 앱을 개발을 위한 [NW.JS](https://nwjs.io/)와 [Electron](http://electron.atom.io/), 모바일 앱 개발을 위한 [React Native](https://facebook.github.io/react-native/) 등이 존재합니다. 심지어 로보틱스와 IoT를 위한 [Johnny-Five](http://johnny-five.io/)라는 플랫폼도 존재합니다. 또한 [MongoDB](https://www.mongodb.com/)를 활용하여 Javascript로 DB관리도 가능하죠.
 
 이런 새로운 기술들을 제대로 다루기 위해서는 그 기반인 자바스크립트부터 제대로 알고 있어야 한다고 생각합니다. 그렇기에 본 강의의 궁극적인 목표는 **Javascript 생태계의 여러 기술을 제대로 다루기 위한 Javascript 기초 공부** 입니다.
-
-본 강의는 Javascript 초심자 분들이 읽기에 적합합니다. 또한 기초 프로그래밍 지식, HTML, 그리고 CSS에 대한 기초적인 지식이 요구될 수 있습니다.
 
 자, 이제 본격적으로 Javascript에 대해 알아봅시다!
 

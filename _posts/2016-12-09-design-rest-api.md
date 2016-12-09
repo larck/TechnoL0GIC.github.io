@@ -8,6 +8,8 @@ comments: true
 share: true
 ---
 
+![](/images/restful-api.jpg)
+
 > 엄격한 의미로 REST는 네트워크 아키텍처 원리의 모음이다. 여기서 ‘네트워크 아키텍처 원리’란 자원을 정의하고 자원에 대한 주소를 지정하는 방법 전반을 일컫는다. *-위키백과*
 
 REST(Representational Safe Transfer)는 서버에 존재하는 자원에 접근하기 위한 URI 설계 원칙이자 방법이다. 이 REST 원리를 따르는 시스템을 RESTful 하다고 칭한다.
