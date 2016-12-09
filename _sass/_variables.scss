@@ -4,9 +4,10 @@
   Font
   -------------- */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+@import url('//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
-$base-font: "Source Sans Pro", sans-serif;
+$base-font: -apple-system, BlinkMacSystemFont, "Nanum Barun Gothic", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $code-font: 'Nanum Gothic Coding', monospace;
 $code-gist-font: 'Nanum Gothic Coding', monospace !important;
 
