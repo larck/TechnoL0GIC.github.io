@@ -2,7 +2,7 @@
 layout: post
 title: "[Javscript 기초 강의] 1강 - 자바스크립트 소개"
 description: "현재의 자바스크립트 생태계 상황과 자바스크립트의 특징을 알아봅시다."
-date: 2016-12-16
+date: 2016-12-03
 tags: [Javascript]
 comments: true
 share: true

@@ -47,9 +47,9 @@ HTTP 에서는 흔히 알려져 있는 `GET` 혹은 `POST` 를 제외하고도 �
 
 ### 메세지
 
-자원에 대한 행위의 상세한 내용을 정의한다. HTTP Payload (Body) 로 표현되며, HTTP State 와 같은 Meta Data는 제외된다. 이는 Header 에 표시하는데, 아래에 자세히 서술해 놓았다. 
+자원에 대한 행위의 상세한 내용을 정의한다. HTTP Payload (Body) 로 표현되며, HTTP State 와 같은 Meta Data는 제외된다. 이는 Header 에 표시하는데, 아래에 자세히 서술해 놓았다.
 
-ID가 user_id_01 이고, name은 user_name, email은 user_email@user.domain 인 회원을 생성하려는 상황을 가정하자. 우리는 User를 **추가** 하려는 것이므로 HTTP Method 는 `POST` 를 사용한다. 또한 요청할 URI는 domain/users 이다. 여기서 우리는 이 유저의 **세부 사항** 을 작성하여 서버에 보내주어야 한다. 일반적으로 JSON의 형태를 사용하여 전송한다.
+ID가 user_id_01 이고, name은 user_name, email은 user_email@user.domain 인 회원을 생성하려는 상황을 가정하자. 우리는 User를 **추가** 하려는 것이므로 HTTP Method 는 `POST` 를 사용한다. 또한 요청할 URI는 domain/users 이다. 여기서 우리는 이 유저의 **세부 사항**을 작성하여 서버에 보내주어야 한다. 일반적으로 JSON의 형태를 사용하여 전송한다.
 
 ```JSON
 {
@@ -59,25 +59,28 @@ ID가 user_id_01 이고, name은 user_name, email은 user_email@user.domain 인 
 }
 ```
 
-### 예시
-
-상황에 따라 리소스, 메소드, 메세지를 어떻게 활용하는지 예시를 통해 알아보자.
-
-
-
 ## 파라미터
 
 리소스에 접근하기 위한 URI를 디자인 할 때 파라미터를 무분별하게 남발해서는 안된다. 예를 들어 서버에 있는 l0gic 이라는 유저 데이터에 접근하기 위한 URI 는
 
 `domain/getUser.php?id=l0gic` 처럼 디자인 하지 않고, `domain/user/l0gic`
-와 같이 오브젝트의 멤버변수를 따라가듯이 디자인을 해야한다. 파라미터의 사용은 데이터의 필터링을 위해 사용한다.
-
-이는 REST API가 **계층 시스템 (Layered System)** 라는 특징을 가지고 있기 때문이다.
-
+와 같이 오브젝트의 멤버변수를 따라가듯이 디자인을 해야한다. 파라미터의 사용은 데이터의 **필터링**을 위해 사용한다.
 
 ## 메타데이터
 
-URI에 접근하여, 접근에 대한 응답 상태를 Body (HTML 부분) 처리의 결과 (성공여부 등)은 HTTP Status 로 표현한다.  오직 접근한 리소스만이 Body 에 표현되어야 한다.
+URI에 접근하여, 접근에 대한 응답 상태를 Body (HTML 부분) 처리의 결과 (성공여부 등)은 HTTP Status 로 표현한다.
 
 http://localhost/user/l0gic
 에 접근했을 경우 사용자가 존재하지 않으면, HTTP Status 는 404 (not found) 가 된다.
+
+## 예시
+
+상황에 따라 리소스, 메소드, 메세지를 어떻게 활용하는지 예시를 통해 알아보자.
+
+| 상황                                       | 메소드    | 리소스 (URI)           | 메시지 (Body)                               |
+| ---------------------------------------- | ------ | ------------------- | ---------------------------------------- |
+| 특정 회원 (l0gic) 조회                         | GET    | domain/users/l0gic  | 없음                                       |
+| 모든 회원 조회                                 | GET    | domain/users        | 없음                                       |
+| 특정 회원 (user01) 생성 (name은 user_name, email은 user_email@example.domain) | POST   | domain/users        | {  id: 'user01', name: 'user_name',  email: 'user_email@example.domain'} |
+| 특정 회원 (user01) 삭제                        | DELETE | domain/users/user01 | 없음                                       |
+| 특정 회원 (l0gic) 데이터 업데이트                   | PUT    | domain/users/l0gic  | {  id: 'l0gic',  name: '조동현',  email: 'contact@l0gic.me'} |
