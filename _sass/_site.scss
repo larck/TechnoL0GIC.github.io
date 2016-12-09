@@ -8,10 +8,6 @@ html {
   font-family: $base-font;
   font-size: 16px;
   line-height: 1.6;
-
-  @media (min-width: 38em) {
-    font-size: 18px;
-  }
 }
 
 html,
