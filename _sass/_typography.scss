@@ -95,6 +95,7 @@ dd {
 
 ul {
   list-style: disc;
+  padding-left: 35px;
 
   li {
     margin-bottom: .25rem;
@@ -109,8 +110,8 @@ ul {
   }
 }
 
-ul:not(.post-tag ul) {
-  padding-left: 35px;
+.post-tag ul {
+  padding-left: 0px;
 }
 
 ol {
