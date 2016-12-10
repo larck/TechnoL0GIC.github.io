@@ -29,7 +29,7 @@ HTML5에는 브라우저 자체에서 데이터를 저장할 수 있는 객체�
 
 위에서 언급했듯이, Local Storage 객체와 Session Storage 객체는 유효기간 존재 유무만 다르며 나머지는 모두 똑같으니 여기서는 Local Storage 만 사용해보도록 하겠다.
 
-**데이터 저장**
+#### 데이터 저장
 
 ```javascript
 localStorage.setItem("foo", "bar"); //setItem 메소드를 사용하는 방법
@@ -39,7 +39,7 @@ localStorage['foo'] = "bar" //딕셔너리 형태로 접근하는 방법
 
 localStorage 객체 자체에 데이터가 저장되기 때문에 여러가지 방법으로 데이터에 접근할 수 있다.
 
-**데이터 조회**
+#### 데이터 조회
 
 ```javascript
 localStorage.getItem("foo"); //getItem 메소드를 사용하는 방법
@@ -49,13 +49,13 @@ localStorage['foo']; //딕셔너리 형태로 접근하는 방법
 
 모두 결과는 "bar" 이다.
 
-**모든 데이터 삭제**
+#### 모든 데이터 삭제
 
 ```javascript
 localStorage.clear();
 ```
 
-**Array 혹은 Object 저장**
+#### Array 혹은 Object 저장
 
 WebStorage는 문자열 형식으로 밖에 저장할 수 없어 어쩔수 없이 배열이나 객체를 Stringify 해준뒤 저장해야한다.
 
