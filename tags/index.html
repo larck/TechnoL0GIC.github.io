@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tags
+title: 태그
 permalink: /tags/
 ---
 
@@ -33,7 +33,7 @@ permalink: /tags/
 	<div class="tag-title" id="{{ this_tag }}">
     {{ this_tag }}
   </div>
-		<ul>
+		<ul class="post-tag">
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
       <li class="tag-post">
@@ -41,7 +41,7 @@ permalink: /tags/
         <a href="{{ post.link }}">
         {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}">
-        {% endif %}  
+        {% endif %}
           <span class="tag-post-title">{{ post.title }}</span>
         </a>
       </li>

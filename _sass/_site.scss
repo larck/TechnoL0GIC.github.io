@@ -300,11 +300,13 @@ body {
   &-list {
     &-post {
 
+      margin-bottom: 5px;
+
       a {
         color: $base-color;
 
         &:hover {
-  				color: $base-color;
+  				color: #2AA9F7;
   				text-decoration: none;
   				background-color: $background-over-color;
   		    border-color: transparent;
@@ -312,10 +314,12 @@ body {
 
       }
 
-
       &-title {
+        font-family: "Source Sans Pro";
         font-size : 1.2rem;
-        font-weight: 600;
+        font-weight: 300;
+
+
       }
 
       &-date {
