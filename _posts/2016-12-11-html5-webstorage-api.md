@@ -3,7 +3,7 @@ layout: post
 title: "HTML5 WebStorage API 사용하기"
 description: "HTML5에서 지원하는 WebStorage API로 웹브라우저에 데이터를 저장하는 방법을 알아본다."
 date: 2016-12-11
-tags: [Javascript]
+tags: [HTML5, Javascript]
 comments: true
 share: true
 ---
