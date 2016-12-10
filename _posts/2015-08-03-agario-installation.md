@@ -8,6 +8,8 @@ comments: true
 share: true
 ---
 
+![](/images/agario.png)
+
 최근 해외도 그렇고 국내도 그렇고, [agar.io](http://agar.io) 라는 웹 게임이 굉장히 유행하고 있다. 그 유행에 따라 커스텀 서버도 많이 등장하고 있는 추세인데, 우리 같은 일반인들도 Agar.io 커스텀 서버를 직접 구축할 수 있다. [github.com](http://github.com) 에 최근 많은 agar.io 클론이 풀렸기 때문인것 같다.
 
 나는 수많은 Agar.io 클론중에 [Ogar Project](https://github.com/OgarProject/Ogar)를 택했다. 딱히 이유는 없고, 예전에 아무거나 다운받아서 서버를 돌려봤는데, 정상적으로 돌아가지 않아서 포기했던적이 있는데, 활동하고 있는 한 카페에서 어떤분이 커스텀 서버를 돌리고 계셔서 추천받은 클론 버전이다.
