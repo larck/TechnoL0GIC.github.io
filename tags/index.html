@@ -12,7 +12,7 @@ permalink: /tags/
 
 {% assign tags_list = site_tags | split:',' | sort %}
 
-<ul class="post-tag">
+<ul class="tags">
   {% for item in (0..site.tags.size) %}
   {% unless forloop.last %}
     {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}

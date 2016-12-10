@@ -52,8 +52,6 @@ nav:
     url:            "/courses"
   - name:           "portfolio"
     url:            "/portfolio"
-  - name:           "Github"
-    url:            "https://github.com/technol0gic"
 
 
 
