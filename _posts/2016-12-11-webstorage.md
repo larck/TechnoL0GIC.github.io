@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![](/images/html5.jpg)
+![](/images/html5.png)
 
 ## 소개
 
