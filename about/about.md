@@ -21,3 +21,9 @@ permalink: /about/
 * Python
 * PHP
 * Arduino
+
+<!-- Disqus -->
+{% if page.comments != false and site.disqus.id %}
+<section id="disqus_thread"></section>
+{% include disqus.html %}
+{% endif %}
