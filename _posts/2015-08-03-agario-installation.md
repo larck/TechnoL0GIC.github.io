@@ -3,7 +3,7 @@ layout: post
 title: "Agar.io 서버 구축하기"
 description: "웹게임 Agar.io 커스텀 서버를 구축하는 법을 알아본다."
 date: 2015-08-03
-tags: [Javascript]
+tags: [Javascript, node.js, game]
 comments: true
 share: true
 ---
