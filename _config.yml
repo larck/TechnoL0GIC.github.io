@@ -48,8 +48,8 @@ nav:
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Cources"
-    url:            "/courses"
+  - name:           "Classes"
+    url:            "/classes"
   - name:           "portfolio"
     url:            "/portfolio"
 

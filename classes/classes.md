@@ -1,6 +1,6 @@
 ---
 title: 강의 목록
-permalink: /courses/
+permalink: /classes/
 ---
 
     블로그에 작성한 '연재 형식'의 강의 목록입니다.
