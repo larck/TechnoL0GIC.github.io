@@ -14,7 +14,7 @@ permalink: /about/
 ## 소속
 * **[설리번 프로젝트](https://sullivanproject.in) (2015.11 ~ 현재)** : 설리번 프로젝트는 프로그래밍에 관심이 많지만 도움을 받지 못하던 학생들을 위한 코딩 교육 단체 입니다. 개발자 및 교육자로 활동중입니다.
 
-* **[Codebakery](https://www.facebook.com/codebakery/)** : 코딩 교육용 소프트웨어 및 컨텐츠를 제작하는 단체입니다. 개발자 및 컨텐츠 크리에이터로 활동중입니다.
+* **[Codebakery](https://www.facebook.com/codebakery/) (2014 ~ 현재)** : 코딩 교육용 소프트웨어 및 컨텐츠를 제작하는 단체입니다. 개발자 및 컨텐츠 크리에이터로 활동중입니다.
 
 ## 사용 기술
 
