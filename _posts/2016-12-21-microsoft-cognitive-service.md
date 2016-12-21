@@ -2,7 +2,7 @@
 layout: post
 title: "Microsoft Cognitive 를 활용한 감정 인식"
 description: "딥러닝 Cognitive API 를 활용하여 감정 데이터를 분석해본다."
-date: 2015-12-21
+date: 2016-12-21
 tags: [CV, Machine Learning, Deep Learning]
 comments: true
 share: true
