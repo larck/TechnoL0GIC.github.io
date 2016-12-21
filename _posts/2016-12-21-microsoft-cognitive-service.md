@@ -8,13 +8,15 @@ comments: true
 share: true
 ---
 
+![](/images/cognitive-0.png)
+
 어그제, 그러니까 12월 19일에 인공지능 세미나에 참여하기 위해 마이크로소프트 광화문 한국 지사에 방문하였다. 마이크로소프트 김영욱 부장님께서 최초로 제시된 인공지능 개념, 역사 부터 오늘날 머신러닝의 등장과 딥러닝의 보편화 등등 여러가지를 알려주셨다. 세미나가 진행되면서, 흥미로운 Open API 들에 대해 알게 되었다. 가장 인상깊었던 API는 마이크로소프트의 **Cognitive Service** 이다. 
 
 ## Cognitive Service
 
 Microsoft Cognitive Service 에는 여러가지 딥러닝에 대한 API가 존재한다. 대표적으로 **Emotion API** 가 있으며, 사진을 넣어주면, 해당 사진에서 얼굴을 인식한다음 행복한 정도, 슬픈 정도 등의 감정 데이터를 분석해서 JSON 으로 반환해주는 API 이다.
 
-![](./images/cognitive-1.png)
+![](/images/cognitive-1.png)
 
 와! 재밌어보인다. 우리도 해보자.
 
@@ -22,9 +24,11 @@ Microsoft Cognitive Service 에는 여러가지 딥러닝에 대한 API가 존�
 
 본 API 를 사용하기 위해서는 Microsoft 계정 (혹은 Github)을 이용해서 API 사용을 위한 Key 를 발급 받아야한다. [Subscription](https://www.microsoft.com/cognitive-services/en-US/subscriptions) 페이지로 가서 **Emotion - Preview** 를 Subscribe 해주자.
 
-![](./images/cognitive-2.png)
+![](/images/cognitive-2.png)
 
 한달에 30,000 번, 1분에 20번의 요청을 무료로 사용할 수 있나보다.
+
+![](/images/cognitive-3.png)
 
 이렇게 API Key 가 발급되었다면, Copy 를 눌러 복사해주자.
 
@@ -37,7 +41,7 @@ Microsoft Cognitive Service 에는 여러가지 딥러닝에 대한 API가 존�
 * **Header** : { Content-Type : application/json, Ocp-Apim-Subscription-Key : ***본인의 API Key*** }
 * **Body** : { url : ***이미지 파일 주소*** }
 
-![](./images/cognitive-4.jpg)
+![](/images/cognitive-4.jpg)
 
 나는 정말정말 **행복해보이는** 유댕이 사진을 활용해보겠다. 다음과 같은 데이터가 반환된다.
 
