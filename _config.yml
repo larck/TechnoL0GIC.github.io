@@ -3,27 +3,25 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "TechnoL0GIC"
-
-
+name:               "Larck"
 
 author:
-  name:             L0GIC
-  facebook:         100007156273191
-  github:           technol0gic
-  email:            cdhnet98@gmail.com
+  name:             Larck
+  facebook:
+  github:           larck
+  email:            lark@outlook.kr
 
 # Google-analytics
 google-analytics:
-  id:               "UA-88772411-1"
+  id:               ""
 
 # Disqus
 disqus:
-  id:               "technol0gic"
+  id:               "larck"
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://l0gic.me" # use this url when develop
+url:                "http://larck.github.io" # use this url when develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
@@ -48,10 +46,6 @@ nav:
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Classes"
-    url:            "/classes"
-  - name:           "portfolio"
-    url:            "/portfolio"
 
 
 
