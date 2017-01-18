@@ -3,11 +3,11 @@
 /*--------------
   Font
   -------------- */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
 @import url('//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url('//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');
 
-$base-font: "sans-serif";
+$base-font: "Source Sans Pro", "sans-serif";
 $code-font: 'Nanum Gothic Coding', monospace;
 $code-gist-font: 'Nanum Gothic Coding', monospace !important;
 
