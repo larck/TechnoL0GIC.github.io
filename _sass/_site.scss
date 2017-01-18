@@ -1,7 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -23,14 +23,13 @@ body {
 .content-container {
   max-width: 45rem;
   padding: 2rem 1.5rem;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 38rem){
+  @media (min-width: 38rem) {
     padding: 2rem 1rem 5rem;
   }
 }
-
 
 /*--------------
   Header
@@ -61,8 +60,8 @@ body {
       font-weight: 300;
       text-transform: uppercase;
       -webkit-transition: all .2s ease;
-         -moz-transition: all .2s ease;
-              transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
 
       &:hover,
       &:focus {
@@ -78,20 +77,20 @@ body {
 }
 
 .header-small {
-	text-align: left;
-	margin-bottom: .75rem;
-	font-size: .75rem;
-	font-weight: 600;
-	text-transform: uppercase;
+  text-align: left;
+  margin-bottom: .75rem;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
 
-	a {
-		color: $base-color;
+  a {
+    color: $base-color;
 
-		&:hover,
-		&:focus {
-			text-decoration: none;
-		}
-	}
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 /*--------------
@@ -103,7 +102,6 @@ body {
     margin-bottom: 2rem;
   }
 }
-
 
 /*--------------
   Post
@@ -135,7 +133,7 @@ body {
       color: #fff;
       background-color: $base-lighten-color;
       text-decoration: none;
-			border-radius: 3px;
+      border-radius: 3px;
     }
     li {
       font-size: .75rem;
@@ -145,7 +143,7 @@ body {
     }
     span {
       float: left;
-			padding: .5px 5px;
+      padding: .5px 5px;
     }
   }
   &-share {
@@ -180,25 +178,25 @@ body {
     }
 
     &-title {
-      font-family: "Source Sans Pro";
+      font-family: $base-font;
       margin-bottom: .25rem;
-      font-size : 1.5rem;
+      font-size: 1.5rem;
       font-weight: 300;
       transition: all 0.3s;
     }
 
     &-date {
-      font-family: "Source Sans Pro";
+      font-family: $base-font;
       color: $base-lighten-color;
       font-size: .85rem;
       text-transform: uppercase;
     }
 
     &-desc {
-      font-family: "Source Sans Pro";
-			color: lighten($base-color, 20);
+      font-family: $base-font;
+      color: lighten($base-color, 20);
       margin-bottom: .25rem;
-      font-size :0.9rem;
+      font-size: 0.9rem;
       font-weight: 300;
     }
   }
@@ -237,7 +235,6 @@ body {
   }
 }
 
-
 /*--------------
   Tags
   -------------- */
@@ -248,46 +245,45 @@ body {
     list-style-type: none;
     text-transform: lowercase;
 
-
     a {
       display: inline-block;
       margin: 1px 4px;
       color: #fff;
-      background-color: lighten($base-color,50);
-			border-radius: 3px;
+      background-color: lighten($base-color, 50);
+      border-radius: 3px;
       span {
         float: left;
         padding: .5px 5px;
       }
       .count {
-        background-color: lighten($base-color,40);
-				border-radius: 0 3px 3px 0;
+        background-color: lighten($base-color, 40);
+        border-radius: 0 3px 3px 0;
       }
       &:hover {
-        background-color: lighten($base-color,40);
+        background-color: lighten($base-color, 40);
       }
     }
   }
 
   &-title {
-		font-size: 1.4rem;
-		font-weight: 600;
-		text-transform: lowercase;
-		padding-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding-top: 1rem;
   }
 
   &-post {
-		padding-left: .75rem;
-		a {
-			color: $base-color;
+    padding-left: .75rem;
+    a {
+      color: $base-color;
 
-			&:hover {
-				color: $base-color;
-				text-decoration: none;
-				background-color: $background-over-color;
-		    border-color: transparent;
+      &:hover {
+        color: $base-color;
+        text-decoration: none;
+        background-color: $background-over-color;
+        border-color: transparent;
       }
-		}
+    }
   }
 }
 
@@ -297,38 +293,47 @@ body {
 .archive {
   &-list {
     &-post {
-
       margin-bottom: 5px;
 
       a {
         color: $base-color;
 
         &:hover {
-  				color: #2AA9F7;
-  				text-decoration: none;
-  				background-color: $background-over-color;
-  		    border-color: transparent;
+          color: #2AA9F7;
+          text-decoration: none;
+          background-color: $background-over-color;
+          border-color: transparent;
         }
 
       }
 
       &-title {
-        font-family: "Source Sans Pro";
-        font-size : 1.2rem;
+        font-family: $base-font;
+        font-size: 1.2rem;
         font-weight: 300;
-
-
+        vertical-align: middle;
       }
 
       &-date {
         color: $base-lighten-color;
         font-size: .75rem;
         text-transform: uppercase;
+        &:before {
+          display: inline-block;
+          content: '';
+          margin: 0 5px;
+          width: 1px;
+          height: 9px;
+          background-color: #ddd;
+          vertical-align: middle;
+        }
+        time {
+          vertical-align: middle;
+        }
       }
     }
   }
 }
-
 
 /*--------------
   Footer
